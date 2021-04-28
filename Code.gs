@@ -78,6 +78,7 @@ function main() {
       // 昨日のタスクだけpush（投稿イメージ：【プロジェクト名】タスク名　40分）
       data.push('【' + projectName + '】 *' + timeEntry.description + '*　' + Math.round(timeEntry.duration/60/60*60) + '分')
     }
+   Utilities.sleep(1000);
   }
 
   // 実績がない日(タイトルのみ1行の日)は終了
