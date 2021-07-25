@@ -27,7 +27,9 @@ var Toggl = {
   BASIC_AUTH: authkey,
 
   get: function(path){
-    var url = 'https://www.toggl.com/api/v8' + path;
+    //var url = 'https://www.toggl.com/api/v8' + path;
+    var url = 'https://api.track.toggl.com/api/v8' + path;
+
     var options = {
       'method' : 'GET',
       'headers': {"Authorization" : "Basic " + Utilities.base64Encode(this.BASIC_AUTH)}
