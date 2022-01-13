@@ -94,7 +94,6 @@ function main() {
   // Slackに実績投稿
   data.push('see :' + ssurl);
   postSlack(data);
-
 }
 
 
